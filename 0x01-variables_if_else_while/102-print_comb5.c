@@ -1,43 +1,34 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Succes)
+ * main - Prints all possible combinations of a pair of
+ * two digit numbers, without any repetition.
+(*
+ * Return: 0 on success.
  */
 
 int main(void)
 {
-	int tho;
-	int hun;
-	int ten;
-	int bas;
+	int i, j;
 
-for ( tho = 0 ; tho < 10 ; tho++)
-{	
-
-	for (hun = 0 ; hun <= 10 ; hun++)
+	for (i = 0; i <= 99; i++)
 	{
-	
-		for (ten = 0 ; ten < 10 ; ten++)
+		for (j = 0; j <= 99; j++)
 		{
-			for ( bas = 0 ; bas < 10 ; bas++)
+			if (i < j && i != j)
 			{
-				putchar('0' + tho);
-				putchar('0' + hun);
-				putchar(32);
-				putchar('0' + ten);
-				putchar('0' + bas);
-				if (!(tho == 9 && hun == 8))
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(' ');
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
-					putchar(32);
+					putchar(' ');
 				}
-				bas++;
 			}
 		}
 	}
-}
 	putchar('\n');
 	return (0);
 }
