@@ -1,13 +1,17 @@
 #include <stdio.h>
-#include <unistd.h>
 
-/**
-*main - entry point
-*return:always 1
-*/
-
-int main (void)
+int main(void)
 {
-write(2, "and that piece of art is usful\" - Dora Korpar, 2015-10-19\n," 59
-		return(1); 
+	printf("\n\n");
+	printf("  c   c  ccccc  c      c       ccc  \n");
+	printf("  c   c  c      c      c      c   c \n");
+	printf("  ccccc  ccccc  c      c      c   c \n");
+	printf("  c   c  c      c      c      c   c \n");
+	printf("  c   c  ccccc  ccccc  ccccc   ccc  \n\n");
+
+	printf("  c   c   ccc   cccc   c      cccc   \n");
+	printf("  c   c  c   c  c   c  c      c   c   \n");
+	printf("  c c c  c   c  cccc   c      c   c   \n");
+	printf("  cc cc  c   c  c   c  c      c   c   \n");
+	printf("  c   c   ccc   c   c  ccccc  cccc    \n\n\n");
 }
