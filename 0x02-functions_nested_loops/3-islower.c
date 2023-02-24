@@ -2,16 +2,16 @@
 #include <ctype.h>
 
 /**
- * _isalpha - check alphabet character
+ * _islower - check lowercase
  *
  * @c: character being checked
  *
- * Return: 1 if c is letter 0 if otherwise
+ * Return: 1 if c is lowercase 0 if anything else
  */
 
-int _isalpha(int c)
+int _islower(int c)
 {
-if (c >= 65 && c <= 122)
+if (c >= 97 && c <= 122)
 {
 return (1);
 }
