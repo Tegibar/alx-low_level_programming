@@ -8,7 +8,7 @@ char *cap_string(char *s)
 {
 int i = 0, j = 0;
 
-char seps[] = {16, 5, 4, 22, 30, 23, 17, 32, 17, 20, 21, 66, 68};
+char seps[] = {32, 10, 9, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 int size = sizeof(seps) / sizeof(seps[0]);
 
@@ -32,3 +32,4 @@ s[0] = 'A' + (s[0] - 'a');
 
 return (s);
 }
+
