@@ -8,7 +8,7 @@ char *_strchr(char *s, char c);
 unsigned int_strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystck, char *needle);
-void print_chessbord(char (*a)[B]);
+void print_chessbord(char (*a)[8]);
 void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
 
