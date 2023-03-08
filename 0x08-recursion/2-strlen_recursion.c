@@ -1,10 +1,8 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
 * _strlen_recursion - function
 * @s: input string
-* Return:0 
+* Return:0
 */
 int _strlen_recursion(char *s)
 {
