@@ -36,3 +36,4 @@ change = change - 1;
 printf("%d\n", total);
 return (0);
 }
+
