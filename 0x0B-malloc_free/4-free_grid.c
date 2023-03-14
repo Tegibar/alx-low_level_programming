@@ -2,15 +2,24 @@
 #include <stdlib.h>
 
 /**
-* free_grid - frees two dimensional grid
-* @grid: the grid
-* @height: height of the grid
-*/
+  * free_grid - function to free memory
+  * @grid: parameter 1
+  * @height: parameter 2
+  * Return: Always 0
+  */
 void free_grid(int **grid, int height)
 {
-int i;
+int i, j;
 
 for (i = 0; i < height; i++)
-free(grid[i]);
+{
+if (grid[i] == NULL)
+{
+for (j = i; j >= 0; j--)
+{
+free(grid[j]);
+}
+
 free(grid);
+}
 }
